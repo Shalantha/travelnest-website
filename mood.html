@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Mood</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">TravelNest</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="random.html">Random Trip</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <div class="hamburger">
+                ☰
+            </div>
+
+            <button id="darkModeBtn">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+    <section class="mood-section reveal">
+
+        <h2>Travel Mood</h2>
+
+        <button id="beachSound">
+            Beach Sound
+        </button>
+
+        <button id="forestSound">
+            Forest Sound
+        </button>
+
+        <button id="citySound">
+            City Sound
+        </button>
+
+        <h3 class="reveal">Travel Tracker</h3>
+
+        <input type="text"
+               id="visitedPlace"
+               placeholder="Enter visited destination">
+
+        <button id="saveVisited">
+            Save Destination
+        </button>
+
+        <p id="savedMessage"></p>
+
+    </section>
+
+    <script src="js/mood.js"></script>
+    <audio id="beachAudio" src="audio/beach.mp3"></audio>
+    <audio id="forestAudio" src="audio/forest.mp3"></audio>
+    <audio id="cityAudio" src="audio/city.mp3"></audio>
+    <script src="js/common.js"></script>
+
+</body>
+</html>

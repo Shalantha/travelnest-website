@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Trip Budget Planner</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">TravelNest</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="random.html">Random Trip</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <div class="hamburger">
+                ☰
+            </div>
+
+            <button id="darkModeBtn">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+    <section class="budget-section">
+
+        <h2>Trip Budget Planner</h2>
+
+        <form id="budgetForm">
+
+            <input type="text"
+                   id="destination"
+                   placeholder="Destination"
+                   required>
+
+            <input type="number"
+                   id="days"
+                   placeholder="Number of Days"
+                   required>
+
+            <input type="number"
+                   id="dailyBudget"
+                   placeholder="Daily Budget"
+                   required>
+
+            <button type="submit">
+                Calculate Budget
+            </button>
+
+        </form>
+
+        <div class="budget-result">
+
+            <h3 id="totalCost"></h3>
+
+            <p id="budgetStatus"></p>
+
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/budget.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback & Support</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">TravelNest</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="random.html">Random Trip</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <div class="hamburger">
+                ☰
+            </div>
+
+            <button id="darkModeBtn">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+    <section class="feedback-section">
+
+        <h2>Feedback & Support</h2>
+
+        <form id="feedbackForm">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Your Email"
+                   required>
+
+            <textarea id="message"
+                      placeholder="Your Message"
+                      required></textarea>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+        </form>
+
+        <p id="feedbackMessage"></p>
+
+        <div class="faq">
+
+            <h3 class="faq-question">
+                How do I book trips?
+            </h3>
+
+            <p class="faq-answer">
+                You can explore destinations and plan trips easily.
+            </p>
+
+            <h3 class="faq-question">
+                Can I save destinations?
+            </h3>
+
+            <p class="faq-answer">
+                Yes, using localStorage wishlist features.
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="js/feedback.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

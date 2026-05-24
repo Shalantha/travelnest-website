@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Explorer</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">TravelNest</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="random.html">Random Trip</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <div class="hamburger">
+                ☰
+            </div>
+
+            <button id="darkModeBtn">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+    <section class="explorer">
+
+        <h2>Explore Destinations</h2>
+
+        <input type="text"
+               id="searchInput"
+               placeholder="Search destination...">
+
+        <div class="destination-cards"
+             id="destinationCards">
+
+        </div>
+
+    </section>
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" id="closeBtn">
+            &times;
+        </span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <h3>Popular Attractions</h3>
+
+        <ul id="modalAttractions"></ul>
+
+        <h3>Travel Cost</h3>
+
+        <table>
+
+            <tr>
+                <th>Estimated Budget</th>
+            </tr>
+
+            <tr>
+                <td id="modalBudget"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+    <script src="js/explorer.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+</html>

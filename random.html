@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Random Trip Generator</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">TravelNest</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Explorer</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="random.html">Random Trip</a></li>
+                <li><a href="mood.html">Travel Mood</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <div class="hamburger">
+                ☰
+            </div>
+
+            <button id="darkModeBtn">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+    <section class="random-section">
+
+        <h2>Random Trip Generator</h2>
+
+        <select id="travelType">
+
+            <option value="">Select Travel Type</option>
+
+            <option value="Adventure">Adventure</option>
+
+            <option value="Relaxation">Relaxation</option>
+
+            <option value="Cultural">Cultural</option>
+
+            <option value="Nature">Nature</option>
+
+        </select>
+
+        <select id="budgetRange">
+
+            <option value="">Select Budget</option>
+
+            <option value="Low">Low</option>
+
+            <option value="Medium">Medium</option>
+
+            <option value="High">High</option>
+
+        </select>
+
+        <button id="generateBtn">
+            Surprise Me Again
+        </button>
+
+        <div class="random-result">
+
+            <h3 id="tripResult"></h3>
+
+            <button id="saveWishlist">
+                Save to Wishlist
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="js/random.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
